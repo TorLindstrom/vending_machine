@@ -35,6 +35,7 @@ public class App
         for (String item: machine.getProducts()){
             System.out.println(item);
         }
-        machine.menu();
+        Menu menu = new Menu(machine);
+        menu.getInput();
     }
 }
